@@ -10,6 +10,11 @@ const questions = [
     name: 'title',
     message: 'What is the title of your project?',
   },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Please provide a short description of your project.',
+  },
 ];
 
 inquirer
@@ -35,11 +40,11 @@ inquirer
     //   name: 'title',
     //   message: 'What is the title of your project?',
     // },
-//     {
-//       type: 'input',
-//       name: 'description',
-//       message: 'Please provide a short description of your project.',
-//     },
+    // {
+    //   type: 'input',
+    //   name: 'description',
+    //   message: 'Please provide a short description of your project.',
+    // },
 //     {
 //         // this needs to be done differently than the rest, not sure what as of right now
 //         type: 'input',
