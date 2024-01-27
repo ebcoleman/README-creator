@@ -2,6 +2,7 @@
 ## Usage
 
 Starter code: https://github.com/coding-boot-camp/potential-enigma
+README template: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
 
 # 09 Node.js Challenge: Professional README Generator
