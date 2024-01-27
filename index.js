@@ -15,27 +15,48 @@ inquirer
     {
       type: 'input',
       name: 'description',
-      message: 'Please provide ',
+      message: 'Please provide a short description of your project.',
     },
     {
       type: 'input',
-      name: '',
-      message: 'What is your favorite hobby?',
+      name: 'installation',
+      message: 'What are the steps required to install your project?',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'screenshot',
+      message: 'Please provide the filepath for the screenshot to your project. Example: assets/images/screenshot.png',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'credits',
+      message: 'Who/what did you use and need to credit in your project?',
     },
     {
+// THIS PART NEEDS REVIEW. DONT KNOW ENOUGH ABOUT LICENSES; this shouldn't be a question. Maybe a list to choose from? that would change the type from input to something else
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'license',
+      message: 'Choose your license:',
+    },
+    {
+        type: 'input',
+        name: 'badges',
+        message: '',
+    },
+    {
+        type: 'input',
+        name: 'features',
+        message: '',
+    },
+    {
+        type: 'input',
+        name: 'contribute',
+        message: '',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: '',
     },
   ])
 
