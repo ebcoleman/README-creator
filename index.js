@@ -10,6 +10,7 @@ const questions = [
     name: 'title',
     message: 'What is the title of your project?',
   },
+  // the title shows in the generatedREADME correctly, the below answer doesnt show in the readme at all. troubleshoot tomorrow
   {
     type: 'input',
     name: 'description',
