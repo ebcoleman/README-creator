@@ -14,13 +14,11 @@ Once all the questions are answered, that will then create your README.md file a
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+![alt text](/assets/README-creator%20recording.gif)
+   
+Link to GitHub Repo:
+https://github.com/ebcoleman/README-creator
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 
 ## Credits
