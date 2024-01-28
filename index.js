@@ -12,7 +12,6 @@ const questions = [
     name: 'title',
     message: 'What is the title of your project?',
   },
-  // the title shows in the generatedREADME correctly, the below answer doesnt show in the readme at all. troubleshoot tomorrow
   {
     type: 'input',
     name: 'description',
@@ -45,19 +44,29 @@ const questions = [
     choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
   },
   {
-      type: 'input',
-      name: 'features',
-      message: 'What are some interesting features of your project?',
+    type: 'input',
+    name: 'contribute',
+    message: 'Did anyone else contribute to this project? Please put their GitHub usernames here.',
   },
   {
-      type: 'input',
-      name: 'contribute',
-      message: 'Did anyone else contribute to this project? Please put their GitHub usernames here.',
+    type: 'input',
+    name: 'features',
+    message: 'What are some interesting features of your project?',
   },
   {
-      type: 'input',
-      name: 'test',
-      message: 'If applicable, provide examples on how to run tests on your application.',
+    type: 'input',
+    name: 'test',
+    message: 'If applicable, provide examples on how to run tests on your application.',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?'
   },
 ];
 
