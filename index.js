@@ -44,12 +44,6 @@ const questions = [
     message: "Please select a license for this project.",
     choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
   },
-  // currently skipping badges, for time purposes
-  // {
-  //     type: 'input',
-  //     name: 'badges',
-  //     message: '',
-  // },
   {
       type: 'input',
       name: 'features',
