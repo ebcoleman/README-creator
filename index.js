@@ -19,12 +19,6 @@ const questions = [
     message: 'Please provide a short description of your project.',
   },
   {
-    // this needs to be done differently than the rest, not sure what as of right now
-    type: 'input',
-    name: 'tableOfContents',
-    message: '',
-  },
-  {
     type: 'input',
     name: 'installation',
     message: 'What are the steps required to install your project?',
@@ -36,63 +30,69 @@ const questions = [
   },
   {
     type: 'input',
+    name: 'link', 
+    message: 'Please provide the URL of your deployed application.'
+  },
+  {
+    type: 'input',
     name: 'credits',
     message: 'Who/what did you use and need to credit in your project?',
   },
   {
-// THIS PART NEEDS REVIEW. DONT KNOW ENOUGH ABOUT LICENSES; this shouldn't be a question. Maybe a list to choose from? that would change the type from input to something else
-    type: 'input',
-    name: 'license',
-    message: 'Choose your license:',
+    type: "checkbox",
+    name: "license",
+    message: "Please select a license for this project.",
+    choices: ["MIT", "APACHE2.0", "Boost1.0", "MPL2.0", "BSD2", "BSD3", "none"],
   },
-  {
-      type: 'input',
-      name: 'badges',
-      message: '',
-  },
+  // currently skipping badges, for time purposes
+  // {
+  //     type: 'input',
+  //     name: 'badges',
+  //     message: '',
+  // },
   {
       type: 'input',
       name: 'features',
-      message: '',
+      message: 'What are some interesting features of your project?',
   },
   {
       type: 'input',
       name: 'contribute',
-      message: '',
+      message: 'Did anyone else contribute to this project? Please put their GitHub usernames here.',
   },
   {
       type: 'input',
       name: 'test',
-      message: '',
+      message: 'If applicable, provide examples on how to run tests on your application.',
   },
 ];
 
-inquirer
-  .prompt(questions)
-  .then((answers) => {
-    const readmeContent = generateMarkdown(answers);
-
-    // Write the README file
-    fs.writeFile('generatedREADME.md', readmeContent, (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log('generatedREADME.md created successfully!');
-      }
-    });
-  })
-  .catch((err) => console.error(err));
-
-
-    
-    
-
-
 // TODO: Create a function to write README file
-function writeToFile(README, data) {}
+function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  
+}
+
+
+
+// inquirer
+//   .prompt(questions)
+//   .then((answers) => {
+//     const readmeContent = generateMarkdown(answers);
+
+//     // Write the README file
+//     fs.writeFile('generatedREADME.md', readmeContent, (err) => {
+//       if (err) {
+//         console.error(err);
+//       } else {
+//         console.log('generatedREADME.md created successfully!');
+//       }
+//     });
+//   })
+//   .catch((err) => console.error(err));
+
 
 // Function call to initialize app
 init();
