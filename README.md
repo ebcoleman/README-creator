@@ -14,7 +14,9 @@ Once all the questions are answered, that will then create your README.md file a
 
 ## Usage
 
-![alt text](/assets/README-creator%20recording.gif)
+Walkthrough Video Link:
+https://drive.google.com/file/d/1xdxOs8_ObqnvX3BVxdmmOt0WIAUbPn-9/view
+
    
 Link to GitHub Repo:
 https://github.com/ebcoleman/README-creator
